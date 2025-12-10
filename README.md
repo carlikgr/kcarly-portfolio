@@ -1,4 +1,5 @@
 # Portfolio for Minimalist and Creative Graphic Designers
+
 > by carlikgr (artist name: KCarly)
 
 🌐 Live Demo: [https://carlikgr.github.io/kcarly-portfolio/](https://carlikgr.github.io/kcarly-portfolio/)
@@ -19,9 +20,11 @@
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/KCarly/portfolio.git
 ```
+
 2. Open index.html in your browser
 
 ---
@@ -31,16 +34,16 @@ git clone https://github.com/KCarly/portfolio.git
 ├── index.html
 ├── 404.html
 ├── assets/
-│   ├── css/
-│   │   ├── index.css      # Barrel: centralizes all CSS imports
-│   │   ├── base.css       # Reset, root variables, base styles
-│   │   ├── layout.css     # Layout utilities (grid, flex, spacing)
-│   │   └── components.css # Shared components (buttons, cards, etc.)
-│   ├── js/
-│   │   └── main.js
-│   └── images/
+│ ├── css/
+│ │ ├── index.css # Barrel: centralizes all CSS imports
+│ │ ├── base.css # Reset, root variables, base styles
+│ │ ├── layout.css # Layout utilities (grid, flex, spacing)
+│ │ └── components.css # Shared components (buttons, cards, etc.)
+│ ├── js/
+│ │ └── main.js
+│ └── images/
 ├── docs/
-│   └── plan1.md            # Development plan with AI assistance
+│ └── plan1.md # Development plan with AI assistance
 ├── README.md
 ├── LICENSE
 └── .gitignore
@@ -48,6 +51,7 @@ git clone https://github.com/KCarly/portfolio.git
 ---
 
 ## License
+
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
 © 2025 KCarly
 
