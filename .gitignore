@@ -1,0 +1,22 @@
+# Sistema operativo
+.DS_Store
+
+# Node / npm (por si en algún momento se agrega algún build o package)
+node_modules/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Media archivos
+*.mp4
+*.mov
+*.mp3
+*.wav
+
+# Archivos de cache de editores / IDEs
+.vscode/
+.idea/
+*.swp
