@@ -31,6 +31,7 @@ git clone https://github.com/KCarly/portfolio.git
 
 ## Folder structure
 
+```bash
 ├── index.html
 ├── 404.html
 ├── assets/
@@ -47,6 +48,7 @@ git clone https://github.com/KCarly/portfolio.git
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
 
 ---
 
