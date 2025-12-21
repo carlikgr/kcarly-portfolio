@@ -3,6 +3,36 @@
    Custom styles extending Bootstrap 5
    ========================================================================== */
 
+:root {
+  /* ========================
+     Tipografía
+     ======================== */
+  --font-h1-display-size: 64px;
+  --font-h1-display-line: 1.2;
+  --font-h1-heading-size: 40px;
+  --font-h1-heading-line: 1.4;
+  --font-h2-size: 32px;
+  --font-h2-line: 1.4;
+  --font-h3-size: 24px;
+  --font-h3-line: 1.4;
+  --font-h4-size: 18px;
+  --font-h4-line: 1.4;
+  --font-p-size: 16px;
+  --font-p-line: 1.4;
+
+  /* ========================
+     Colores
+     ======================== */
+  --color-primary-black: #000000;
+  --color-primary-white: #ffffff;
+  --color-primary-green: #00ff00;
+  --color-dark-70: #666666;
+  --color-dark-50: #969696;
+  --color-grey-30: #cccccc;
+  --color-grey-20: #e3e3e3;
+  --color-grey-5: #f0f0f0;
+}
+
 /* --------------------------------------------------------------------------
    1. CSS Custom Properties
    -------------------------------------------------------------------------- */
@@ -27,13 +57,49 @@ body {
 }
 
 .bg-dark {
-  background-color: var(--color-bg-alt) !important;
+  background-color: #f1f1f1 !important;
 }
 
 /* Section spacing */
 .py-lg-6 {
   padding-top: 6rem !important;
   padding-bottom: 6rem !important;
+}
+
+h1.display {
+  font-size: var(--font-h1-display-size);
+  line-height: var(--font-h1-display-line);
+  color: var(--color-primary-white);
+}
+
+h1.heading {
+  font-size: var(--font-h1-heading-size);
+  line-height: var(--font-h1-heading-line);
+  color: var(--color-primary-white);
+}
+
+h2 {
+  font-size: var(--font-h2-size);
+  line-height: var(--font-h2-line);
+  color:var(--color-primary-black);
+}
+
+h3 {
+  font-size: var(--font-h3-size);
+  line-height: var(--font-h3-size);
+  color: var(--color-primary-white);
+}
+
+h4 {
+  font-size: var(--font-h4-line);
+  line-height: var(--font-h4-line);
+  color: var(--color-primary-white);
+}
+
+p {
+  font-size: var(--font-p-size);
+  line-height: var(--font-p-line);
+  color: var(--color-bg-alt);
 }
 
 /* --------------------------------------------------------------------------
@@ -76,13 +142,25 @@ body {
    4. Hero Section
    -------------------------------------------------------------------------- */
 .hero {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background-color: var(--color-primary-white); /* Fondo blanco */
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 1rem;
+  font-family: "Manrope", sans-serif;
 }
 
 .hero-bg {
   background: inherit;
   z-index: 0;
 }
+
+.hero .container {
+  position: relative;
+  z-index: 1; /* <- el contenido queda encima de las formas */
+}
+
+
+
 
 /* Floating shapes */
 .floating-shapes {
@@ -123,12 +201,48 @@ body {
   left: 30%;
 }
 
+/* Imagen circular alineada a la izquierda */
+.hero-image-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem; /* Espacio mínimo entre imagen y texto */
+}
+
+.hero-image-wrapper img.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Textos alineados a la izquierda */
+.hero-title, .hero-subtitle {
+  text-align: left;
+}
+
 .hero-title {
-  letter-spacing: -0.03em;
+  font-size: 64px;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
-  opacity: 0.8;
+  font-size: 18px;
+  line-height: 1.4;
+  color:var(--color-bg-alt);
+  margin-bottom: 1rem;
+}
+
+/* Botón primario */
+.hero .btn-primary {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
 }
 
 /* Scroll indicator */
@@ -139,7 +253,7 @@ body {
 .mouse {
   width: 26px;
   height: 42px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 13px;
   position: relative;
 }
@@ -152,7 +266,7 @@ body {
   transform: translateX(-50%);
   width: 4px;
   height: 8px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   animation: scrollMouse 1.5s ease-in-out infinite;
 }
@@ -185,6 +299,7 @@ body {
   z-index: -1;
 }
 
+
 .about-image img {
   position: relative;
   z-index: 1;
@@ -201,6 +316,10 @@ body {
   background: linear-gradient(90deg, var(--bs-primary), #818cf8);
   border-radius: 4px;
   width: 0; /* Animated by GSAP */
+}
+
+.fw-semibold{
+  color: var(--color-dark-70);
 }
 
 /* --------------------------------------------------------------------------
@@ -266,8 +385,8 @@ body {
    8. Buttons
    -------------------------------------------------------------------------- */
 .btn-primary {
-  background: var(--bs-primary);
-  border-color: var(--bs-primary);
+  background: rgb(0, 0, 0);
+  border-color: black;
   padding: 0.75rem 2rem;
   font-weight: 600;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -286,6 +405,22 @@ body {
 }
 
 .btn-outline-light:hover {
+  transform: translateY(-2px);
+}
+
+/* Botón Contact negro */
+.btn-contact {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 2px solid #000;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #333 !important;
+  color: #fff !important;
   transform: translateY(-2px);
 }
 
@@ -329,20 +464,42 @@ body {
     font-size: 3rem;
   }
 
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
   .shape {
     transform: scale(0.6);
   }
+  
 }
 
 @media (max-width: 575.98px) {
-  .hero-title {
-    font-size: 2.5rem;
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem;
   }
 
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .hero .row {
+    flex-direction: column;
+    align-items: center;
+  }
   .hero-cta .btn {
     display: block;
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .hero-image-wrapper {
+    margin-bottom: 1.5rem;
   }
 
   .hero-cta .btn:last-child {
@@ -352,4 +509,5 @@ body {
   .about-image::before {
     display: none;
   }
+ 
 }

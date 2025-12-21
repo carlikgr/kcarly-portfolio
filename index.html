@@ -9,7 +9,10 @@
     />
     <meta name="author" content="KCarly" />
     <link rel="icon" href="/assets/images/favicon.ico" />
-    <title>Grade 2 Demo: Bootstrap + GSAP Scroll</title>
+    <title>KCarly Portfolio</title>
+
+    <!-- Google Fonts: Manrope -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link
@@ -21,78 +24,83 @@
    <link rel="stylesheet" href="./assets/css/index.css" />
     <!-- Custom Scripts -->
     <script src="./assets/js/main.js" defer></script>
+
+
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Portfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+  <div class="container">
+    <!-- Logo SVG -->
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/logo.svg" alt="Logo" height="40">
+    </a>
+
+    <!-- Burger -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item mx-3">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#">Work</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Botón Contact a la derecha -->
+    <a href="#contact" class="btn btn-contact d-none d-lg-inline-block">Contact</a>
+  </div>
+</nav>
 
     <main>
       <!-- Hero Section -->
-      <section
-        id="hero"
-        class="hero min-vh-100 d-flex align-items-center position-relative overflow-hidden"
-      >
-        <!-- Parallax Background -->
-        <div class="hero-bg position-absolute w-100 h-100"></div>
-
-        <!-- Floating shapes (GSAP animated) -->
-        <div class="floating-shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
+      <section class="hero d-flex align-items-center position-relative">
+  <div class="container">
+    <div class="column align-items-center">
+      <!-- Imagen circular alineada a la izquierda -->
+      <div class="col-auto">
+        <div class="hero-image-wrapper">
+          <img src="assets/images/my-photo.JPG" alt="Carla Kaubisch" class="hero-image">
         </div>
+      </div>
 
-        <div class="container position-relative z-1 text-center text-white">
-          <h1 class="display-1 fw-bold hero-title">John Designer</h1>
-          <p class="lead hero-subtitle mb-4">
-            Full-Stack Developer & Creative Technologist
-          </p>
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary btn-lg me-3"
-              >View Projects</a
-            >
-            <a href="#contact" class="btn btn-outline-light btn-lg"
-              >Get in Touch</a
-            >
-          </div>
-        </div>
+      <!-- Textos y botón alineados a la izquierda -->
+      <div class="col">
+        <h1 class="hero-title">
+          I'm Carla Kaubisch, a UX/UI designer specialized in creating user-friendly and consistent interfaces based in Madrid, Spain.
+        </h1>
+        <h4 class="hero-subtitle mt-2">
+          Passionate about design systems, accessibility, and creating intuitive experiences.
+        </h4>
+        <a href="#projects" class="btn btn-primary mt-3">View Projects</a>
+      </div>
+    </div>
+  </div>
 
-        <!-- Scroll indicator -->
-        <div
-          class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4"
-        >
-          <div class="mouse"></div>
-        </div>
-      </section>
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4">
+    <div class="mouse"></div>
+  </div>
+
+  <!-- Floating shapes -->
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+</section>
+
+
 
       <!-- About Section -->
       <section id="about" class="py-5 py-lg-6 bg-dark">
@@ -109,22 +117,18 @@
             </div>
             <div class="col-lg-6">
               <h2 class="display-5 fw-bold mb-4 gsap-reveal">About Me</h2>
-              <p class="lead text-muted mb-4 gsap-reveal">
-                I'm a creative developer passionate about building beautiful,
-                functional, and accessible digital experiences.
+              <p class="lead mb-4 gsap-reveal">
+               My main interests lie in UX/UI design and branding, but I'm also actively working on improving my skills in programming and 3D modelling, as well as video editing. I'd describe myself as a curious and multicultural person who loves to learn new things and take on challenges.
               </p>
-              <p class="text-muted gsap-reveal">
-                With 7+ years of experience spanning front-end development,
-                UI/UX design, and motion graphics, I bring a unique perspective
-                to every project. I believe in the power of animation to enhance
-                user experience without sacrificing performance.
+              <p class="gsap-reveal">
+                My aim is to create engaging and user-friendly digital experiences that not only look great but also function seamlessly across all devices. I believe in the power of design to solve problems and enhance user satisfaction.
               </p>
 
               <!-- Skills with animated progress -->
               <div class="skills mt-5">
                 <div class="skill-item gsap-reveal mb-3">
                   <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold">React / Next.js</span>
+                    <span class="fw-semibold">Figma</span>
                     <span class="text-muted">95%</span>
                   </div>
                   <div class="progress" style="height: 8px">
@@ -133,8 +137,8 @@
                 </div>
                 <div class="skill-item gsap-reveal mb-3">
                   <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold">GSAP / Animation</span>
-                    <span class="text-muted">90%</span>
+                    <span class="fw-semibold">Adobe Creative Cloud</span>
+                    <span class="text-muted">80%</span>
                   </div>
                   <div class="progress" style="height: 8px">
                     <div class="progress-bar skill-bar" data-width="90"></div>
@@ -142,8 +146,8 @@
                 </div>
                 <div class="skill-item gsap-reveal mb-3">
                   <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold">Node.js / Express</span>
-                    <span class="text-muted">85%</span>
+                    <span class="fw-semibold">Cinema 4D</span>
+                    <span class="text-muted">70%</span>
                   </div>
                   <div class="progress" style="height: 8px">
                     <div class="progress-bar skill-bar" data-width="85"></div>

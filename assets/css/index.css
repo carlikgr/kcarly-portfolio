@@ -2,3 +2,22 @@
 @import './layout.css';
 @import './components.css';
 @import './otros.css';
+@import './navbar.css';
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+  font-weight: bold;
+}
+
+.btn-primary {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+}
