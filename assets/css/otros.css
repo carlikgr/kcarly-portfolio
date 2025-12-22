@@ -57,7 +57,7 @@ body {
 }
 
 .bg-dark {
-  background-color: #f1f1f1 !important;
+  background-color: #ffffff !important;
 }
 
 /* Section spacing */
@@ -138,6 +138,11 @@ p {
   left: 0;
 }
 
+.navbar.sticky-top {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
 /* --------------------------------------------------------------------------
    4. Hero Section
    -------------------------------------------------------------------------- */
@@ -145,7 +150,7 @@ p {
   background-color: var(--color-primary-white); /* Fondo blanco */
   position: relative;
   overflow: hidden;
-  padding: 6rem 1rem;
+  padding: 8rem 1rem;
   font-family: "Manrope", sans-serif;
 }
 
@@ -294,8 +299,8 @@ p {
   content: "";
   position: absolute;
   inset: 20px -20px -20px 20px;
-  border: 2px solid var(--bs-primary);
-  border-radius: 1rem;
+  border: 2px solid rgb(238, 164, 201);
+  border-radius: 1rem; 
   z-index: -1;
 }
 
@@ -307,7 +312,7 @@ p {
 
 /* Skills progress bars */
 .progress {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -319,12 +324,31 @@ p {
 }
 
 .fw-semibold{
-  color: var(--color-dark-70);
+  color: var(--bs-body-bg);
 }
 
 /* --------------------------------------------------------------------------
    6. Projects Section
    -------------------------------------------------------------------------- */
+
+.projects-title {
+  color: var(--color-primary-white)
+}
+
+/* Featured Project */
+.featured-project .project-card {
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.featured-project .card-img-wrapper {
+  min-height: 100%;
+}
+
+.featured-project img {
+  object-fit: cover;
+}
+
 .project-card {
   background: var(--color-bg-alt);
   border-radius: 1rem;
@@ -470,6 +494,10 @@ p {
 
   .shape {
     transform: scale(0.6);
+  }
+
+  .featured-project .card-body {
+    padding: 2rem 1.5rem;
   }
   
 }

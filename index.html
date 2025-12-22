@@ -27,12 +27,12 @@
 
 
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+  <body data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-offset="80" tabindex="0">
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
   <div class="container">
     <!-- Logo SVG -->
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#home">
       <img src="assets/images/logo.svg" alt="Logo" height="40">
     </a>
 
@@ -46,19 +46,20 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item mx-3">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+      
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link" href="#">Work</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#projects">Work</a>
         </li>
       </ul>
     </div>
 
     <!-- Botón Contact a la derecha -->
-    <a href="#contact" class="btn btn-contact d-none d-lg-inline-block">Contact</a>
+    <a href="#contact" class="btn btn-primary mt-3 mt-lg-0 d-none d-lg-inline-block">Contact</a>
   </div>
 </nav>
 
@@ -70,7 +71,13 @@
       <!-- Imagen circular alineada a la izquierda -->
       <div class="col-auto">
         <div class="hero-image-wrapper">
-          <img src="assets/images/my-photo.JPG" alt="Carla Kaubisch" class="hero-image">
+          <img src="https://ik.imagekit.io/carlikgr/myportfolio/my-photo.webp?tr=w-200,q-90,fo-face"
+      alt="Portrait of Carla Kaubisch"
+      class="hero-image"
+      width="100"
+      height="100"
+      decoding="async"
+      fetchpriority="high">
         </div>
       </div>
 
@@ -107,16 +114,17 @@
         <div class="container">
           <div class="row align-items-center g-5">
             <div class="col-lg-6">
-              <div class="about-image gsap-reveal">
+              <div class="gsap-reveal">
                 <img
-                  src="https://picsum.photos/600/700?random=10"
-                  alt="Profile"
+                  src="https://ik.imagekit.io/carlikgr/myportfolio/this-is-me.webp?,fo-face"
+    alt="Portrait of Carla Kaubisch"
                   class="img-fluid rounded-4 shadow-lg"
+                  
                 />
               </div>
             </div>
             <div class="col-lg-6">
-              <h2 class="display-5 fw-bold mb-4 gsap-reveal">About Me</h2>
+              <h2 class="display-5 fw-bold mb-4 gsap-reveal">Get to know me!</h2>
               <p class="lead mb-4 gsap-reveal">
                My main interests lie in UX/UI design and branding, but I'm also actively working on improving my skills in programming and 3D modelling, as well as video editing. I'd describe myself as a curious and multicultural person who loves to learn new things and take on challenges.
               </p>
@@ -163,11 +171,56 @@
       <section id="projects" class="py-5 py-lg-6">
         <div class="container">
           <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold gsap-reveal">Featured Projects</h2>
-            <p class="lead text-muted gsap-reveal">
-              A selection of my recent work
+            <h2 class="display-5 fw-bold gsap-reveal projects-title">Featured Projects</h2>
+            <p class="lead projects-title gsap-reveal">
+              A selection of my best work
             </p>
           </div>
+
+          <!-- Featured Project -->
+<article class="featured-project mb-5">
+  <div class="row g-0 align-items-center project-card border-0 shadow-sm">
+    <!-- Imagen -->
+    <div class="col-lg-7">
+      <div class="card-img-wrapper overflow-hidden h-100">
+        <img
+          src="https://ik.imagekit.io/carlikgr/myportfolio/project2.webp?tr=w-1600,q-80,fo-auto"
+  class="img-fluid w-100"
+  alt="Featured branding project"
+  loading="lazy"
+  width="1600"
+  height="900"
+        />
+      </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="col-lg-5">
+      <div class="card-body p-4 p-lg-5">
+        <span class="text-uppercase small projects-title d-block mb-2">
+          Featured project
+        </span>
+
+        <h3 class="card-title h2 mb-3">
+          PUERTA DE ALCALÁ - a Graphic campaign to promote Madrid 
+        </h3>
+
+        <p class="card-text projects-title mb-4">
+          This project was the winner of a contest for the
+Ayuntamiento de Madrid who requested a graphic campaign to
+promote the city of Madrid with the Puerta de Alcalá as its
+emblem.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge bg-primary-subtle text-primary">Graphic Campaign</span>
+          <span class="badge bg-primary-subtle text-primary">Modern Design</span>
+          <span class="badge bg-primary-subtle text-primary">Contest</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
 
           <div class="row g-4">
             <!-- Project Card 1 -->
@@ -175,27 +228,38 @@
               <article class="card project-card h-100 border-0 shadow-sm">
                 <div class="card-img-wrapper overflow-hidden">
                   <img
-                    src="https://picsum.photos/400/300?random=1"
-                    class="card-img-top"
-                    alt="E-commerce Platform"
+                    src="https://ik.imagekit.io/carlikgr/myportfolio/project4.webp?tr=w-800,q-80,fo-auto"
+  class="card-img-top"
+  alt="UX/UI design project"
+  loading="lazy"
+  width="800"
+  height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">E-commerce Platform</h3>
-                  <p class="card-text text-muted small">
-                    Full-stack e-commerce solution with real-time inventory and
-                    Stripe integration.
+                  <h3 class="card-title h5">ROLLIN MUSIC - Music web-app design, Front-end & Back-end</h3>
+                  <p class="card-text projects-title small">
+                    his project aims to develop a webapp dedicated to
+music playback, designed to promote different genres and music
+videos from artists of all categories.
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
-                      >React</span
+                      >Figma</span
                     >
                     <span class="badge bg-primary-subtle text-primary"
-                      >Node.js</span
+                      >HTML</span
                     >
                     <span class="badge bg-primary-subtle text-primary"
-                      >MongoDB</span
+                      >CSS</span
                     >
+                    <span class="badge bg-primary-subtle text-primary"
+                      >JavaScript</span>
+
+                    <span class="badge bg-primary-subtle text-primary"
+                      >php</span>
+                    
+
                   </div>
                 </div>
               </article>
@@ -206,26 +270,30 @@
               <article class="card project-card h-100 border-0 shadow-sm">
                 <div class="card-img-wrapper overflow-hidden">
                   <img
-                    src="https://picsum.photos/400/300?random=2"
-                    class="card-img-top"
-                    alt="Dashboard UI"
+                    src="https://ik.imagekit.io/carlikgr/myportfolio/project1.webp?tr=w-800,q-80,fo-auto"
+  class="card-img-top"
+  alt="UX/UI design project"
+  loading="lazy"
+  width="800"
+  height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">Analytics Dashboard</h3>
-                  <p class="card-text text-muted small">
-                    Real-time data visualization with interactive charts and
-                    dark mode.
+                  <h3 class="card-title h5">KOHRA - Natural clay mask brand & packaging design</h3>
+                  <p class="card-text projects-title small">
+                    Design of a brand of 100% natural clay masks that aims to
+increase its value in the market, seeking exclusivity and a
+unique experience from purchase to application of the product.
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
-                      >D3.js</span
+                      >Brand Design</span
                     >
                     <span class="badge bg-primary-subtle text-primary"
-                      >WebSocket</span
+                      >Packaging</span
                     >
                     <span class="badge bg-primary-subtle text-primary"
-                      >GSAP</span
+                      >3D Modelling</span
                     >
                   </div>
                 </div>
@@ -237,23 +305,27 @@
               <article class="card project-card h-100 border-0 shadow-sm">
                 <div class="card-img-wrapper overflow-hidden">
                   <img
-                    src="https://picsum.photos/400/300?random=3"
-                    class="card-img-top"
-                    alt="Mobile App"
+                    src="https://ik.imagekit.io/carlikgr/myportfolio/project3.webp?tr=w-800,q-80,fo-auto"
+  class="card-img-top"
+  alt="UX/UI design project"
+  loading="lazy"
+  width="800"
+  height="600"
+
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">Fitness Mobile App</h3>
-                  <p class="card-text text-muted small">
+                  <h3 class="card-title h5">PENSADORES ETERNOS - Book collection</h3>
+                  <p class="card-text projects-title small">
                     Cross-platform fitness tracker with workout plans and
                     progress analytics.
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
-                      >React Native</span
+                      >Editorial Design</span
                     >
                     <span class="badge bg-primary-subtle text-primary"
-                      >Firebase</span
+                      >Book collection</span
                     >
                   </div>
                 </div>
@@ -265,23 +337,30 @@
               <article class="card project-card h-100 border-0 shadow-sm">
                 <div class="card-img-wrapper overflow-hidden">
                   <img
-                    src="https://picsum.photos/400/300?random=4"
-                    class="card-img-top"
-                    alt="Portfolio Site"
+                    src="https://ik.imagekit.io/carlikgr/myportfolio/project6.webp?tr=w-800,q-80,fo-auto"
+  class="card-img-top"
+  alt="UX/UI design project"
+  loading="lazy"
+  width="800"
+  height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">Agency Website</h3>
-                  <p class="card-text text-muted small">
-                    Award-winning agency site with scroll-driven animations and
-                    3D elements.
+                  <h3 class="card-title h5">KAWS - Responsive website redesign ofMoco Museum</h3>
+                  <p class="card-text projects-title small">
+                    This project is based on the redesign of the Moco
+Museum website, focusing exclusively on the KAWS Exhibition. 
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
-                      >Three.js</span
+                      >HTML</span
                     >
                     <span class="badge bg-primary-subtle text-primary"
-                      >GSAP</span
+                      >CSS</span>
+                    <span class="badge bg-primary-subtle text-primary"
+                    >JavaScript</span>
+                    <span class="badge bg-primary-subtle text-primary"
+                      >Figma</span
                     >
                   </div>
                 </div>
@@ -293,23 +372,25 @@
               <article class="card project-card h-100 border-0 shadow-sm">
                 <div class="card-img-wrapper overflow-hidden">
                   <img
-                    src="https://picsum.photos/400/300?random=5"
-                    class="card-img-top"
-                    alt="SaaS Platform"
+                     src="https://ik.imagekit.io/carlikgr/myportfolio/project5.webp?tr=w-800,q-80,fo-auto"
+  class="card-img-top"
+  alt="UX/UI design project"
+  loading="lazy"
+  width="800"
+  height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">SaaS Platform</h3>
-                  <p class="card-text text-muted small">
-                    Multi-tenant SaaS with role-based access and subscription
-                    management.
+                  <h3 class="card-title h5">YEEZY Special Edition </h3>
+                  <p class="card-text projects-title small">
+                    Visual campaign for YEEZY made with Cinema 4D and Adobe Photoshop.
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
-                      >Next.js</span
+                      >Cinema 4D</span
                     >
                     <span class="badge bg-primary-subtle text-primary"
-                      >Prisma</span
+                      >Adobe Photoshop</span
                     >
                   </div>
                 </div>
@@ -321,23 +402,23 @@
               <article class="card project-card h-100 border-0 shadow-sm">
                 <div class="card-img-wrapper overflow-hidden">
                   <img
-                    src="https://picsum.photos/400/300?random=6"
-                    class="card-img-top"
-                    alt="AI Tool"
+                     src="https://ik.imagekit.io/carlikgr/myportfolio/project7.webp?tr=w-800,q-80,fo-auto"
+  class="card-img-top"
+  alt="UX/UI design project"
+  loading="lazy"
+  width="800"
+  height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">AI Content Generator</h3>
-                  <p class="card-text text-muted small">
-                    GPT-powered content creation tool with custom fine-tuning
-                    options.
+                  <h3 class="card-title h5">REFORMISMO21 - Web redesign</h3>
+                  <p class="card-text projects-title small">
+                    In this project I carried out the redesign of the Reformismo21
+website, as a member of the WEJYC team.
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
-                      >OpenAI</span
-                    >
-                    <span class="badge bg-primary-subtle text-primary"
-                      >Python</span
+                      >Figma</span
                     >
                   </div>
                 </div>
@@ -353,7 +434,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
               <h2 class="display-5 fw-bold mb-4 gsap-reveal">
-                Let's Work Together
+                Let's Get in Touch!
               </h2>
               <p class="lead text-muted mb-5 gsap-reveal">
                 Have a project in mind? I'd love to hear about it. Let's create
@@ -361,7 +442,7 @@
               </p>
               <div class="gsap-reveal">
                 <a
-                  href="mailto:hello@example.com"
+                  href="mailto:ckaubisch@gmail.com"
                   class="btn btn-primary btn-lg mb-4"
                 >
                   Start a Conversation
@@ -414,10 +495,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-4 text-center text-muted small">
+    <footer class="py-4 text-center small">
       <div class="container">
         <p class="mb-0">
-          &copy; 2025 John Designer. Built with Bootstrap 5 + GSAP.
+          &copy; 2025 KCarly. Built with Bootstrap 5 + GSAP.
         </p>
       </div>
     </footer>
