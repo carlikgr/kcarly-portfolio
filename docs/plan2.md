@@ -47,27 +47,31 @@ La IA propuso un enfoque de rediseño visual basado en claridad, coherencia y ad
 
 ---
 
-## 4. Qué se va a implementar
+## 4. Qué se va a implementar (Sprint 2)
 
 - Ajuste de la estructura HTML para reflejar la jerarquía final del contenido.
 - Definición de una paleta de colores consistente mediante custom properties.
 - Aplicación de estilos tipográficos para encabezados y texto base.
 - Implementación del layout usando Flexbox y CSS Grid cuando sea adecuado.
 - Estilado de componentes básicos como botones, secciones y bloques de contenido.
-- Mejora del espaciado y alineación para lograr equilibrio visual.
+- Navbar sticky, scrollspy y responsive con burger menu.
+- Hero Section con imagen circular, textos alineados a la izquierda, scroll indicator y botón primario.
+- Sección de proyectos con Featured Project de ancho completo y seis cards con animaciones GSAP.
+- Optimización de imágenes mediante ImageKit.
+- Responsividad y tipografía fluida adaptativa.
+- Hover states: nav-links con línea verde brillante, botón primario negro.
 
 ---
 
-## 5. Consideraciones de accesibilidad y responsive
+## 5. Tecnologías y Librerías
 
-- Mantener el uso de HTML semántico.
-- Asegurar contraste de color suficiente (WCAG AA).
-- Utilizar unidades relativas y tipografía fluida cuando sea posible.
-- Seguir un enfoque mobile-first con mejora progresiva.
-- Evitar animaciones excesivas y respetar la preferencia de reducción de movimiento del usuario.
+- HTML5 (estructura semántica)  
+- CSS3 (variables, responsive, estilos personalizados)  
+- Bootstrap 5 (navbar, grid, responsive utilities)  
+- Google Fonts – Manrope (tipografía global)  
+- GSAP (animaciones en scroll y hover)  
+- ImageKit.io (optimización y CDN de imágenes)  
+- JavaScript (scrollspy y comportamiento interactivo del navbar)
 
 ---
 
-## 6. Notas posteriores a la implementación
-
-(A completar una vez finalizada la implementación del Sprint 2.)
