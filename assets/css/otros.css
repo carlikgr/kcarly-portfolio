@@ -57,7 +57,7 @@ body {
 }
 
 .bg-dark {
-  background-color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 /* Section spacing */
@@ -81,7 +81,7 @@ h1.heading {
 h2 {
   font-size: var(--font-h2-size);
   line-height: var(--font-h2-line);
-  color:var(--color-primary-black);
+  color:var(--color-primary-white);
 }
 
 h3 {
@@ -99,7 +99,7 @@ h4 {
 p {
   font-size: var(--font-p-size);
   line-height: var(--font-p-line);
-  color: var(--color-bg-alt);
+  color: var(--color-grey-20);
 }
 
 /* --------------------------------------------------------------------------
@@ -119,6 +119,7 @@ p {
 .nav-link {
   position: relative;
   padding: 0.5rem 1rem !important;
+  display: inline-block;
 }
 
 .nav-link::after {
@@ -142,6 +143,10 @@ p {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Línea verde al hover de navbar */
+.navbar-nav .nav-link::after {
+  background-color: #6366f1 !important;
+}
 
 /* --------------------------------------------------------------------------
    4. Hero Section
@@ -150,7 +155,7 @@ p {
   background-color: var(--color-primary-white); /* Fondo blanco */
   position: relative;
   overflow: hidden;
-  padding: 8rem 1rem;
+  padding: 6rem 0rem;
   font-family: "Manrope", sans-serif;
 }
 
@@ -256,10 +261,10 @@ p {
 }
 
 .mouse {
-  width: 26px;
-  height: 42px;
+  width: 36px;
+  height: 54px;
   border: 2px solid rgba(0, 0, 0, 0.5);
-  border-radius: 13px;
+  border-radius: 18px;
   position: relative;
 }
 
@@ -270,7 +275,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
   width: 4px;
-  height: 8px;
+  height: 10px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   animation: scrollMouse 1.5s ease-in-out infinite;
@@ -312,7 +317,7 @@ p {
 
 /* Skills progress bars */
 .progress {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -324,15 +329,24 @@ p {
 }
 
 .fw-semibold{
-  color: var(--bs-body-bg);
+  color: var(--color-grey-20);
 }
+
+.text-muted{
+  color: var(--color-dark-70) !important;
+}
+
+
+
 
 /* --------------------------------------------------------------------------
    6. Projects Section
    -------------------------------------------------------------------------- */
-
+#projects {
+  background-color: var(--color-primary-white);
+}
 .projects-title {
-  color: var(--color-primary-white)
+  color: var(--color-primary-black)
 }
 
 /* Featured Project */
@@ -349,8 +363,26 @@ p {
   object-fit: cover;
 }
 
+.card-body a {
+  color: var(--color-primary-black);
+  text-decoration: none;
+  font-size: var(--font-p-size);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+
+.card-body a:hover {
+  font-weight:600 ;
+}
+
+/* Other projects grid */
+
 .project-card {
-  background: var(--color-bg-alt);
+  background: var(--color-grey-5);
   border-radius: 1rem;
   overflow: hidden;
   transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
@@ -358,7 +390,7 @@ p {
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .card-img-wrapper {
@@ -382,6 +414,13 @@ p {
 
 .card-title {
   margin-bottom: 0.75rem;
+  color: var(--color-primary-black);
+  font-weight: 600;
+}
+
+.text-uppercase{
+  color: var(--color-dark-70);
+  font-weight: bold;
 }
 
 /* Badge styling */
@@ -396,13 +435,48 @@ p {
 /* --------------------------------------------------------------------------
    7. Contact Section
    -------------------------------------------------------------------------- */
-.social-links a {
-  transition: color 0.3s, transform 0.3s;
+.footer-section {
+  background-color: #000000;
+  padding: 0 2rem;
 }
 
-.social-links a:hover {
-  color: var(--bs-primary) !important;
-  transform: translateY(-3px);
+.footer-eyebrow {
+  font-size: var(--h4-heading-xs);
+}
+
+.footer-title {
+  font-size: var(--font-h1-display-size);
+  line-height: var(--font-h1-display-line);
+  color: var(--color-primary-white);
+  padding-bottom: 1rem;
+}
+
+.footer-btn {
+  font-size: var(--body-default);
+  border-radius: 8px;
+  padding: 12px 24px;
+}
+
+.footer-list li {
+  margin-bottom: 12px;
+}
+
+.footer-list a {
+  color: var(--primary-white);
+  font-size: var(--body-default);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-text{
+  color: var(--color-dark-70);
+  font-size: var(--font-p-size);
 }
 
 /* --------------------------------------------------------------------------
@@ -434,18 +508,20 @@ p {
 
 /* Botón Contact negro */
 .btn-contact {
-  background-color: #000 !important;
-  color: #fff !important;
-  border: 2px solid #000;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: solid #000000;
   font-weight: 600;
   padding: 0.5rem 1.5rem;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn-contact:hover {
-  background-color: #333 !important;
+  background-color: #818cf8 !important;
+  border-color: #818cf8;
   color: #fff !important;
   transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
 }
 
 /* --------------------------------------------------------------------------
@@ -480,6 +556,14 @@ p {
   }
 }
 
+/* Focus indicators for keyboard users */
+
+:focus-visible {
+  outline: 2px solid #00ff00;
+  outline-offset: 4px;
+}
+
+
 /* --------------------------------------------------------------------------
    11. Responsive Adjustments
    -------------------------------------------------------------------------- */
@@ -509,11 +593,12 @@ p {
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: var(--font-h1-heading-size);
   }
 
   .hero-subtitle {
-    font-size: 14px;
+    font-size: 16px;
+    padding-top: 1rem;
   }
 
   .hero .row {
@@ -536,6 +621,9 @@ p {
 
   .about-image::before {
     display: none;
+  }
+   .footer-title {
+    font-size: var(--font-h1-heading-size);
   }
  
 }

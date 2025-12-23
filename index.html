@@ -11,8 +11,15 @@
     <link rel="icon" href="/assets/images/favicon.ico" />
     <title>KCarly Portfolio</title>
 
+    <!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+<link rel="apple-touch-icon" href="assets/images/logo.svg">
+
     <!-- Google Fonts: Manrope -->
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -20,93 +27,138 @@
       rel="stylesheet"
     />
 
+    <!-- Bootstrap Icons -->
+    <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+
     <!-- Custom Styles -->
-   <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <!-- Custom Scripts -->
     <script src="./assets/js/main.js" defer></script>
-
-
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-offset="80" tabindex="0">
-  <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
-  <div class="container">
-    <!-- Logo SVG -->
-    <a class="navbar-brand" href="#home">
-      <img src="assets/images/logo.svg" alt="Logo" height="40">
-    </a>
 
-    <!-- Burger -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
-      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarContent"
+    data-bs-offset="80"
+    tabindex="0"
+  >
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
+      <div class="container">
+        <!-- Logo SVG -->
+        <a class="navbar-brand" href="#hero">
+          <img src="assets/images/logo.svg" alt="Logo" height="40" />
+        </a>
 
-    <!-- Nav links -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item mx-3">
-          <a class="nav-link active" href="#home">Home</a>
-        </li>
-      
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="#projects">Work</a>
-        </li>
-      </ul>
-    </div>
+        <!-- Burger -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Botón Contact a la derecha -->
-    <a href="#contact" class="btn btn-primary mt-3 mt-lg-0 d-none d-lg-inline-block">Contact</a>
-  </div>
-</nav>
+        <!-- Nav links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link active " href="#hero" aria-current="page">Home</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#about" aria-current="page">About</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#projects" aria-current="page">Work</a>
+            </li>
+            <li class="nav-item mt-3 d-lg-none">
+  <a href="#contact" class="btn btn-primary w-100">
+    Contact
+  </a>
+</li>
+          </ul>
+        </div>
+
+        <!-- Botón Contact a la derecha -->
+        <a
+          href="#contact"
+          class="btn btn-primary mt-3 mt-lg-0 d-none d-lg-inline-block"
+          >Contact</a
+        >
+      </div>
+    </nav>
 
     <main>
       <!-- Hero Section -->
-      <section class="hero d-flex align-items-center position-relative">
+<section id="hero" class="hero position-relative">
   <div class="container">
-    <div class="column align-items-center">
-      <!-- Imagen circular alineada a la izquierda -->
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="col align-items-start">
+      
+      <!-- Imagen de perfil -->
       <div class="col-auto">
         <div class="hero-image-wrapper">
-          <img src="https://ik.imagekit.io/carlikgr/myportfolio/my-photo.webp?tr=w-200,q-90,fo-face"
-      alt="Portrait of Carla Kaubisch"
-      class="hero-image"
-      width="100"
-      height="100"
-      decoding="async"
-      fetchpriority="high">
+          <img
+            src="https://ik.imagekit.io/carlikgr/myportfolio/my-photo.webp?tr=w-200,q-90,fo-face"
+            alt="Portrait of Carla Kaubisch"
+            class="hero-image"
+            width="100"
+            height="100"
+            decoding="async"
+            fetchpriority="high"
+          />
         </div>
       </div>
 
-      <!-- Textos y botón alineados a la izquierda -->
+      <!-- Texto -->
       <div class="col">
         <h1 class="hero-title">
-          I'm Carla Kaubisch, a UX/UI designer specialized in creating user-friendly and consistent interfaces based in Madrid, Spain.
+          I'm Carla Kaubisch, a UX/UI designer specialized in creating
+          user-friendly and consistent interfaces based in Madrid, Spain.
         </h1>
+
         <h4 class="hero-subtitle mt-2">
-          Passionate about design systems, accessibility, and creating intuitive experiences.
+          Passionate about design systems, accessibility, and creating
+          intuitive experiences.
         </h4>
-        <a href="#projects" class="btn btn-primary mt-3">View Projects</a>
+
+        <a href="#projects" class="btn btn-primary mt-3">
+          View Projects
+        </a>
       </div>
     </div>
-  </div>
 
-  <!-- Scroll indicator -->
-  <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4">
-    <div class="mouse"></div>
+    <!-- SCROLL INDICATOR -->
+    <div class="row">
+      <div class="col d-flex justify-content-center mt-5">
+        <div class="scroll-indicator" aria-hidden="true">
+          <div class="mouse"></div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <!-- Floating shapes -->
   <div class="floating-shapes">
-    <div class="shape shape-1"></div>
-    <div class="shape shape-2"></div>
-    <div class="shape shape-3"></div>
+    <div class="shape shape-1" aria-hidden="true"></div>
+    <div class="shape shape-2" aria-hidden="true"></div>
+    <div class="shape shape-3" aria-hidden="true"></div>
   </div>
 </section>
-
 
 
       <!-- About Section -->
@@ -117,19 +169,27 @@
               <div class="gsap-reveal">
                 <img
                   src="https://ik.imagekit.io/carlikgr/myportfolio/this-is-me.webp?,fo-face"
-    alt="Portrait of Carla Kaubisch"
+                  alt="Portrait of Carla Kaubisch"
                   class="img-fluid rounded-4 shadow-lg"
-                  
                 />
               </div>
             </div>
             <div class="col-lg-6">
-              <h2 class="display-5 fw-bold mb-4 gsap-reveal">Get to know me!</h2>
+              <h2 class="display-5 fw-bold mb-4 gsap-reveal">
+                Get to know me!
+              </h2>
               <p class="lead mb-4 gsap-reveal">
-               My main interests lie in UX/UI design and branding, but I'm also actively working on improving my skills in programming and 3D modelling, as well as video editing. I'd describe myself as a curious and multicultural person who loves to learn new things and take on challenges.
+                My main interests lie in UX/UI design and branding, but I'm also
+                actively working on improving my skills in programming and 3D
+                modelling, as well as video editing. I'd describe myself as a
+                curious and multicultural person who loves to learn new things
+                and take on challenges.
               </p>
               <p class="gsap-reveal">
-                My aim is to create engaging and user-friendly digital experiences that not only look great but also function seamlessly across all devices. I believe in the power of design to solve problems and enhance user satisfaction.
+                My aim is to create engaging and user-friendly digital
+                experiences that not only look great but also function
+                seamlessly across all devices. I believe in the power of design
+                to solve problems and enhance user satisfaction.
               </p>
 
               <!-- Skills with animated progress -->
@@ -171,56 +231,72 @@
       <section id="projects" class="py-5 py-lg-6">
         <div class="container">
           <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold gsap-reveal projects-title">Featured Projects</h2>
+            <h2 class="display-5 fw-bold gsap-reveal projects-title">
+              Featured Projects
+            </h2>
             <p class="lead projects-title gsap-reveal">
               A selection of my best work
             </p>
           </div>
 
           <!-- Featured Project -->
-<article class="featured-project mb-5">
-  <div class="row g-0 align-items-center project-card border-0 shadow-sm">
-    <!-- Imagen -->
-    <div class="col-lg-7">
-      <div class="card-img-wrapper overflow-hidden h-100">
-        <img
-          src="https://ik.imagekit.io/carlikgr/myportfolio/project2.webp?tr=w-1600,q-80,fo-auto"
-  class="img-fluid w-100"
-  alt="Featured branding project"
-  loading="lazy"
-  width="1600"
-  height="900"
-        />
-      </div>
-    </div>
+          <article class="featured-project mb-5">
+            <div
+              class="row g-0 align-items-center project-card border-0 shadow-sm"
+            >
+              <!-- Imagen -->
+              <div class="col-lg-7">
+                <div class="card-img-wrapper overflow-hidden h-100">
+                  <img
+                    src="https://ik.imagekit.io/carlikgr/myportfolio/project2.webp?tr=w-1600,q-80,fo-auto"
+                    class="img-fluid w-100"
+                    alt="Featured branding project"
+                    loading="lazy"
+                    width="1600"
+                    height="900"
+                  />
+                </div>
+              </div>
 
-    <!-- Contenido -->
-    <div class="col-lg-5">
-      <div class="card-body p-4 p-lg-5">
-        <span class="text-uppercase small projects-title d-block mb-2">
-          Featured project
-        </span>
+              <!-- Contenido -->
+              <div class="col-lg-5">
+                <div class="card-body p-4 p-lg-5">
+                  <span
+                    class="text-uppercase small projects-title d-block mb-2"
+                  >
+                    PUERTA DE ALCALÁ
+                  </span>
 
-        <h3 class="card-title h2 mb-3">
-          PUERTA DE ALCALÁ - a Graphic campaign to promote Madrid 
-        </h3>
+                  <h3 class="card-title h2 mb-3">
+                     A Graphic campaign to promote Madrid
+                  </h3>
 
-        <p class="card-text projects-title mb-4">
-          This project was the winner of a contest for the
-Ayuntamiento de Madrid who requested a graphic campaign to
-promote the city of Madrid with the Puerta de Alcalá as its
-emblem.
-        </p>
+                  <p class="card-text projects-title mb-4">
+                    This project was the winner of a contest for the
+                    Ayuntamiento de Madrid who requested a graphic campaign to
+                    promote the city of Madrid with the Puerta de Alcalá as its
+                    emblem.
+                  </p>
 
-        <div class="d-flex flex-wrap gap-2">
-          <span class="badge bg-primary-subtle text-primary">Graphic Campaign</span>
-          <span class="badge bg-primary-subtle text-primary">Modern Design</span>
-          <span class="badge bg-primary-subtle text-primary">Contest</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
+                  <a href="https://www.linkedin.com/posts/udituniversidad_la-puerta-de-alcal%C3%A1-redise%C3%B1ada-con-talento-ugcPost-7344297650038398978-275X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPPMvABx3wkltBC0IH2xynFVKJnDTyn_is" target="_blank">
+                  See more <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-primary-subtle text-primary"
+                      >Graphic Campaign</span
+                    >
+                    <span class="badge bg-primary-subtle text-primary"
+                      >Modern Design</span
+                    >
+                    <span class="badge bg-primary-subtle text-primary"
+                      >Contest</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
 
           <div class="row g-4">
             <!-- Project Card 1 -->
@@ -229,19 +305,26 @@ emblem.
                 <div class="card-img-wrapper overflow-hidden">
                   <img
                     src="https://ik.imagekit.io/carlikgr/myportfolio/project4.webp?tr=w-800,q-80,fo-auto"
-  class="card-img-top"
-  alt="UX/UI design project"
-  loading="lazy"
-  width="800"
-  height="600"
+                    class="card-img-top"
+                    alt="UX/UI design project"
+                    loading="lazy"
+                    width="800"
+                    height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">ROLLIN MUSIC - Music web-app design, Front-end & Back-end</h3>
+                  <span
+                    class="text-uppercase small projects-title d-block mb-2"
+                  >
+                    Rollin Music
+                  </span>
+                  <h3 class="card-title h5">
+                    Music web-app design, Front-end & Back-end
+                  </h3>
                   <p class="card-text projects-title small">
-                    his project aims to develop a webapp dedicated to
-music playback, designed to promote different genres and music
-videos from artists of all categories.
+                    This project aims to develop a webapp dedicated to music
+                    playback, designed to promote different genres and music
+                    videos from artists of all categories.
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
@@ -254,12 +337,12 @@ videos from artists of all categories.
                       >CSS</span
                     >
                     <span class="badge bg-primary-subtle text-primary"
-                      >JavaScript</span>
+                      >JavaScript</span
+                    >
 
                     <span class="badge bg-primary-subtle text-primary"
-                      >php</span>
-                    
-
+                      >php</span
+                    >
                   </div>
                 </div>
               </article>
@@ -271,19 +354,27 @@ videos from artists of all categories.
                 <div class="card-img-wrapper overflow-hidden">
                   <img
                     src="https://ik.imagekit.io/carlikgr/myportfolio/project1.webp?tr=w-800,q-80,fo-auto"
-  class="card-img-top"
-  alt="UX/UI design project"
-  loading="lazy"
-  width="800"
-  height="600"
+                    class="card-img-top"
+                    alt="UX/UI design project"
+                    loading="lazy"
+                    width="800"
+                    height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">KOHRA - Natural clay mask brand & packaging design</h3>
+                  <span
+                    class="text-uppercase small projects-title d-block mb-2"
+                  >
+                    Kohra
+                  </span>
+                  <h3 class="card-title h5">
+                    Natural clay mask brand & packaging design
+                  </h3>
                   <p class="card-text projects-title small">
                     Design of a brand of 100% natural clay masks that aims to
-increase its value in the market, seeking exclusivity and a
-unique experience from purchase to application of the product.
+                    increase its value in the market, seeking exclusivity and a
+                    unique experience from purchase to application of the
+                    product.
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
@@ -306,19 +397,27 @@ unique experience from purchase to application of the product.
                 <div class="card-img-wrapper overflow-hidden">
                   <img
                     src="https://ik.imagekit.io/carlikgr/myportfolio/project3.webp?tr=w-800,q-80,fo-auto"
-  class="card-img-top"
-  alt="UX/UI design project"
-  loading="lazy"
-  width="800"
-  height="600"
-
+                    class="card-img-top"
+                    alt="UX/UI design project"
+                    loading="lazy"
+                    width="800"
+                    height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">PENSADORES ETERNOS - Book collection</h3>
+                  <span
+                    class="text-uppercase small projects-title d-block mb-2"
+                  >
+                    Pensadores eternos
+                  </span>
+                  <h3 class="card-title h5">
+                    Book collection & editorial design
+                  </h3>
                   <p class="card-text projects-title small">
-                    Cross-platform fitness tracker with workout plans and
-                    progress analytics.
+                    A collection of unique and
+avant-garde die-cut books that aims to encourage its target to buy them either
+for their subject matter and content or for their visual
+aesthetics. 
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
@@ -338,27 +437,36 @@ unique experience from purchase to application of the product.
                 <div class="card-img-wrapper overflow-hidden">
                   <img
                     src="https://ik.imagekit.io/carlikgr/myportfolio/project6.webp?tr=w-800,q-80,fo-auto"
-  class="card-img-top"
-  alt="UX/UI design project"
-  loading="lazy"
-  width="800"
-  height="600"
+                    class="card-img-top"
+                    alt="UX/UI design project"
+                    loading="lazy"
+                    width="800"
+                    height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">KAWS - Responsive website redesign ofMoco Museum</h3>
+                  <span
+                    class="text-uppercase small projects-title d-block mb-2"
+                  >
+                    KAWS Exhibition
+                  </span>
+                  <h3 class="card-title h5">
+                   Responsive website redesign of Moco Museum
+                  </h3>
                   <p class="card-text projects-title small">
-                    This project is based on the redesign of the Moco
-Museum website, focusing exclusively on the KAWS Exhibition. 
+                    This project is based on the redesign of the Moco Museum
+                    website, focusing exclusively on the KAWS Exhibition.
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
                       >HTML</span
                     >
                     <span class="badge bg-primary-subtle text-primary"
-                      >CSS</span>
+                      >CSS</span
+                    >
                     <span class="badge bg-primary-subtle text-primary"
-                    >JavaScript</span>
+                      >JavaScript</span
+                    >
                     <span class="badge bg-primary-subtle text-primary"
                       >Figma</span
                     >
@@ -372,18 +480,25 @@ Museum website, focusing exclusively on the KAWS Exhibition.
               <article class="card project-card h-100 border-0 shadow-sm">
                 <div class="card-img-wrapper overflow-hidden">
                   <img
-                     src="https://ik.imagekit.io/carlikgr/myportfolio/project5.webp?tr=w-800,q-80,fo-auto"
-  class="card-img-top"
-  alt="UX/UI design project"
-  loading="lazy"
-  width="800"
-  height="600"
+                    src="https://ik.imagekit.io/carlikgr/myportfolio/project5.webp?tr=w-800,q-80,fo-auto"
+                    class="card-img-top"
+                    alt="UX/UI design project"
+                    loading="lazy"
+                    width="800"
+                    height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">YEEZY Special Edition </h3>
+                  <span
+                    class="text-uppercase small projects-title d-block mb-2"
+                  >
+                    YEEZY
+                  </span>
+                  <h3 class="card-title h5">Special Sneaker Edition Modelling in 3D</h3>
                   <p class="card-text projects-title small">
-                    Visual campaign for YEEZY made with Cinema 4D and Adobe Photoshop.
+                    Visual campaign for YEEZY made with Cinema 4D and Adobe
+                    Photoshop to showcase a special edition sneaker in a 3D
+                    environment.
                   </p>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
@@ -402,20 +517,29 @@ Museum website, focusing exclusively on the KAWS Exhibition.
               <article class="card project-card h-100 border-0 shadow-sm">
                 <div class="card-img-wrapper overflow-hidden">
                   <img
-                     src="https://ik.imagekit.io/carlikgr/myportfolio/project7.webp?tr=w-800,q-80,fo-auto"
-  class="card-img-top"
-  alt="UX/UI design project"
-  loading="lazy"
-  width="800"
-  height="600"
+                    src="https://ik.imagekit.io/carlikgr/myportfolio/project7.webp?tr=w-800,q-80,fo-auto"
+                    class="card-img-top"
+                    alt="UX/UI design project"
+                    loading="lazy"
+                    width="800"
+                    height="600"
                   />
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title h5">REFORMISMO21 - Web redesign</h3>
+                  <span
+                    class="text-uppercase small projects-title d-block mb-2"
+                  >
+                    REFORMISMO21
+                  </span>
+                  <h3 class="card-title h5">Web redesign </h3>
                   <p class="card-text projects-title small">
-                    In this project I carried out the redesign of the Reformismo21
-website, as a member of the WEJYC team.
+                    In this project I carried out the redesign of the
+                    Reformismo21 website, as a member of the WEJYC team. Several versions were made in Figma and revisions were made
+until the client decided the final design.
                   </p>
+                  <a href="https://reformismo21.org/" target="_blank">
+                  View live <i class="bi bi-arrow-up-right"></i>
+                </a>
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge bg-primary-subtle text-primary"
                       >Figma</span
@@ -427,79 +551,79 @@ website, as a member of the WEJYC team.
           </div>
         </div>
       </section>
+<!-- CONTACT -->
+      <section id="contact" class="footer-section bg-black text-white py-5 py-lg-6">
+  <div class="container">
 
-      <!-- Contact Section -->
-      <section id="contact" class="py-5 py-lg-6 bg-dark">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-              <h2 class="display-5 fw-bold mb-4 gsap-reveal">
-                Let's Get in Touch!
-              </h2>
-              <p class="lead text-muted mb-5 gsap-reveal">
-                Have a project in mind? I'd love to hear about it. Let's create
-                something amazing.
-              </p>
-              <div class="gsap-reveal">
-                <a
-                  href="mailto:ckaubisch@gmail.com"
-                  class="btn btn-primary btn-lg mb-4"
-                >
-                  Start a Conversation
-                </a>
-              </div>
-              <div
-                class="social-links gsap-reveal d-flex justify-content-center gap-4"
-              >
-                <a href="#" class="text-muted fs-4" aria-label="GitHub">
-                  <svg
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="text-muted fs-4" aria-label="LinkedIn">
-                  <svg
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="text-muted fs-4" aria-label="Twitter">
-                  <svg
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
+    <div class="row gy-5 align-items-start">
+
+      <!-- LEFT: CTA -->
+      <div class="col-lg-6">
+        <p class="footer-eyebrow text-uppercase mb-3 gsap-reveal">
+          Contact
+        </p>
+
+        <h2 class="footer-title mb-4 gsap-reveal">
+          Let’s start<br />
+          creating together
+        </h2>
+
+        <a
+          href="mailto:ckaugran20@gmail.com"
+          class="btn btn-contact footer-btn gsap-reveal"
+           aria-label="Send an email to Carla Kaubisch"
+        >
+          Let’s talk <i class="bi bi-arrow-up-right ms-2"></i>
+        </a>
+      </div>
+
+      <!-- RIGHT: LINKS -->
+      <div class="col-lg-6">
+        <div class="row">
+
+          <!-- NAV -->
+          <div class="col-6">
+            <ul class="footer-list list-unstyled gsap-reveal">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#projects">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="mailto:ckaugran20@gmail.com" aria-label="Send an email to Carla Kaubisch">Contact</a></li>
+            </ul>
           </div>
+
+          <!-- SOCIAL -->
+          <div class="col-6">
+            <ul class="footer-list list-unstyled gsap-reveal">
+              <li>
+                <a href="https://www.linkedin.com/in/carla-kaubisch-granados/" target="_blank">
+                  LinkedIn <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/kcarly____/" target="_blank">
+                  Instagram <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/carlakaubisch" target="_blank">
+                  Behance <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
-      </section>
+      </div>
+
+    </div>
+  </div>
+</section>
     </main>
 
     <!-- Footer -->
     <footer class="py-4 text-center small">
       <div class="container">
-        <p class="mb-0">
-          &copy; 2025 KCarly. Built with Bootstrap 5 + GSAP.
-        </p>
+        <p class="mb-0 footer-text">&copy; 2025 KCarly. Built with Bootstrap 5 + GSAP.</p>
       </div>
     </footer>
 

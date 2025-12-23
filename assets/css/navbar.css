@@ -1,4 +1,0 @@
-/* Línea verde al hover de navbar */
-.navbar-nav .nav-link::after {
-  background-color: #6366f1 !important;
-}

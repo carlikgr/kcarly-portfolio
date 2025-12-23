@@ -2,7 +2,6 @@
 @import './layout.css';
 @import './components.css';
 @import './otros.css';
-@import './navbar.css';
 
 body {
   font-family: 'Manrope', sans-serif;
