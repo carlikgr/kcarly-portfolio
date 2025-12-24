@@ -377,6 +377,7 @@ p {
 
 .card-body a:hover {
   font-weight:600 ;
+  color: var(--bs-primary);
 }
 
 /* Other projects grid */
@@ -385,6 +386,10 @@ p {
   background: var(--color-grey-5);
   border-radius: 1rem;
   overflow: hidden;
+  backface-visibility: hidden; /*Reduce micro-flickers en iOS*/
+  opacity: 0;
+  transform: translateY(32px);
+  will-change: opacity, transform; /* Evita micro-jumps y mejora la interpolación en mobile */
   transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
 }
 

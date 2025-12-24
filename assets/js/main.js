@@ -400,14 +400,14 @@ function initProjectCards() {
 		 * (in this scroll frame). We animate them as a batch with stagger.
 		 */
 		onEnter: (batch) =>
-			gsap.from(batch, {
-				y: 60,           // Start 60px below
-				opacity: 0,      // Start invisible
-				duration: 0.8,
+			gsap.to(batch, {
+				y: 0,           // Start 50px below
+				opacity: 1,      // Start invisible
+				duration: 0.6,
 				stagger: 0.15,   // 0.15s delay between each card
-				ease: 'power2.out',
+				ease: 'power3.out',
 			}),
-		start: 'top 90%',   // Trigger when card top hits 90% of viewport
+		start: 'top 90%',   // Trigger when card top hits 85% of viewport
 		once: true,          // Only animate once (no re-triggering on scroll back)
 	});
 }
