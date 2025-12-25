@@ -13,38 +13,49 @@ repository_url: https://github.com/carlikgr/kcarly-portfolio.git
 
 # Project details
 title:
- es: Portfolio para diseñadores gráficos minimales y creativos
- en: Portfolio for Minimalist and Creative Graphic Designers
+  es: Portfolio personal para diseñadores UX/UI minimalistas
+  en: Personal portfolio for minimalist UX/UI designers
 
 abstract:
- es: |
-  Una descripción concisa de tu proyecto web en español. 
-  Explica qué construyes, para quién y por qué es importante.
- en: |
-  A concise description of your web project in English.
-  Explain what you're building, for whom, and why it matters.
+  es: |
+    Portfolio web personal diseñado y desarrollado para presentar proyectos,
+    habilidades y enfoque profesional como diseñadora UX/UI. El proyecto
+    prioriza una jerarquía visual clara, tipografía fluida, accesibilidad y
+    animaciones sutiles con propósito, siguiendo un enfoque mobile-first y
+    buenas prácticas de maquetación web.
+  en: |
+    A personal web portfolio designed and developed to showcase projects,
+    skills, and professional approach as a UX/UI designer. The project focuses
+    on clear visual hierarchy, fluid typography, accessibility, and purposeful
+    animations, following a mobile-first approach and modern web layout best
+    practices.
 
 # Technical tags (choose relevant ones)
 tags:
- - html5
- - css3
- - responsive-design
- - accessibility
- # Add more as relevant: javascript, sass, performance, etc.
+  - html5
+  - css3
+  - responsive-design
+  - accessibility
+  - javascript
+  - bootstrap
+  - gsap
+  - animation
 
 # Learning objectives you're focusing on
 learning_focus:
- - semantic-html
- - mobile-first-design
- - web-accessibility
- # Add more as you progress
+  - semantic-html
+  - mobile-first-design
+  - css-architecture
+  - fluid-typography
+  - web-accessibility
+  - scroll-animations
 
 # Week tracking (update as you go)
 milestones:
- week_1_setup: false
- week_2_brief: false
- week_4_metadata: false
- week_5_showcase: false
+  week_1_setup: true
+  week_2_brief: true
+  week_4_metadata: true
+  week_5_showcase: true
 
 # Optional: link to your project brief
 brief_url: project-brief.md

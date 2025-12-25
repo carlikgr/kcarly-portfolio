@@ -70,6 +70,11 @@ La IA propuso un enfoque de rediseño visual basado en claridad, coherencia y es
 - Integración de favicon usando SVG.
 - Navegación interna mediante anchors (#home, #about, #projects, #contact).
 
+### Página 404 personalizada
+
+Se implementó una página 404 personalizada accesible desde cualquier ruta inexistente en GitHub Pages.  
+La página presenta una jerarquía clara con el código de error, un mensaje explicativo y un botón primario que permite volver al inicio del sitio, cumpliendo con los requisitos de usabilidad y navegación.
+
 ---
 
 ## 5. Accesibilidad y responsive

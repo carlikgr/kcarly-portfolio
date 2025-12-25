@@ -2,16 +2,20 @@
 
 ## Trends
 
-- [Trend 1]
-- [Trend 2]
-- [Trend 3]
+- Minimalist portfolio layouts with strong typographic hierarchy
+- Mobile-first and accessibility-aware design approaches
+- Floating shapes and subtle scroll-based animations used with purpose (micro-interactions)
 
 ## Visual References
 
-- [Link or moodboard image 1]
-- [Link or moodboard image 2]
-- [Link or moodboard image 3]
+- **Pearl – Free Portfolio Template (Framer)**  
+  https://framer.com/projects/Pearl-FREE-Portfolio-Template-copy--sL2GLyPIcFJlfmJjhhDC-9jnGK?node=augiA20Il
+
+- Modern designer portfolios featured on Framer and Awwwards, focused on clean layouts, large headlines, and neutral color palettes
+
+- Contemporary UX/UI designer personal websites using floating shapes and restrained motion to add depth without visual noise
 
 ## Theme Draft
 
-[Your project’s core concept—what it’s about]
+A minimalist and professional UX/UI designer portfolio focused on clarity, readability, and purposeful motion.  
+The project aims to showcase work and skills through a clean visual system, accessible typography, and subtle animations that enhance the user experience without distracting from the content.
